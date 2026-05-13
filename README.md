@@ -12,7 +12,7 @@ This project is experimental systems software. It uses process-wide DLL
 injection and API detouring, so it should be treated as a debugging/research
 tool rather than a general-purpose desktop customization package.
 
-> ![WARNING]
+> [!WARNING]
 > This project intentionally injects code into other GUI processes. Do not install
 > it on production systems, shared machines, or security-sensitive environments.
 > Unsigned global injection is also commonly blocked or monitored by endpoint
@@ -164,9 +164,9 @@ This project cannot magically restyle every old UI surface.
 This is best understood as an activation-context experiment for classic Win32
 UI, not a universal theme engine.
 
-## Build Requirements
+## Build Prerequisites
 
-- Windows 10 or later
+- Windows 10/11 or later
 - Visual Studio with the Desktop development with C++ workload
 - CMake 3.20 or newer, either on `PATH` or bundled with Visual Studio
 - Git, only when the script needs to clone a local vcpkg copy
@@ -240,7 +240,7 @@ exist under `dist`, then run `install.cmd` to copy the DLL and sibling manifest
 to the stable Windows deployment directories and enable AppInit.
 
 The installer checks Secure Boot before deploying files. When Secure Boot is
-enabled, Windows disables the AppInit_DLLs mechanism, so the installer stops
+enabled, Windows disables the `AppInit_DLLs` mechanism, so the installer stops
 instead of writing registry entries that cannot take effect.
 
 Installed files:
@@ -282,8 +282,7 @@ custom prepared output root, keep the same architecture subdirectory layout
 .\scripts\install.ps1 -DistRoot C:\path\to\dist
 ```
 
-`install.reg` is kept as a static fallback template for manual deployment. The
-PowerShell installer is the preferred path because it resolves `%WINDIR%` at
+The PowerShell installer is the preferred path because it resolves `%WINDIR%` at
 runtime and avoids repository-specific absolute paths.
 
 ## Quick Smoke Test
