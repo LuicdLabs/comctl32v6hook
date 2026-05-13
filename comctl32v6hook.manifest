@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+
+  <assemblyIdentity
+    type="win32"
+    name="comctl32v6hook"
+    version="1.0.0.0"
+    processorArchitecture="*"
+  />
+
+  <!--
+    Force the Microsoft.Windows.Common-Controls v6 side-by-side assembly while
+    this activation context is active. This is the dependency that enables
+    visual styles for classic Win32 common controls.
+  -->
+  <dependency>
+    <dependentAssembly>
+      <assemblyIdentity
+        type="win32"
+        name="Microsoft.Windows.Common-Controls"
+        version="6.0.0.0"
+        processorArchitecture="*"
+        publicKeyToken="6595b64144ccf1df"
+        language="*"
+      />
+    </dependentAssembly>
+  </dependency>
+
+</assembly>

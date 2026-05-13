@@ -1,0 +1,8 @@
+{
+  "name": "comctl32v6hook",
+  "version-string": "0.1.0",
+  "description": "A Windows Detours-based AppInit DLL that activates Common Controls v6 around legacy Win32 UI creation paths.",
+  "dependencies": [
+    "detours"
+  ]
+}

@@ -1,0 +1,50 @@
+# Build output
+build*/
+out/
+bin/
+obj/
+dist/
+.deps/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest*.txt
+compile_commands.json
+
+# Visual Studio
+.vs/
+*.sln
+*.slnx
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.vcxproj.FileListAbsolute.txt
+*.VC.db
+*.VC.VC.opendb
+*.opensdf
+*.sdf
+*.ipch
+
+# Native build artifacts
+*.dll
+*.exe
+*.lib
+*.exp
+*.ilk
+*.pdb
+*.obj
+*.res
+*.tlog
+*.recipe
+*.lastbuildstate
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.user
+*.swp
+Thumbs.db
+Desktop.ini

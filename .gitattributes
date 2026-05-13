@@ -1,0 +1,15 @@
+* text=auto
+
+*.cpp text eol=crlf
+*.h text eol=crlf
+*.hpp text eol=crlf
+*.cmake text eol=crlf
+CMakeLists.txt text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+*.md text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.manifest text eol=crlf
+*.reg text eol=crlf
